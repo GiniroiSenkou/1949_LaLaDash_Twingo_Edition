@@ -1,0 +1,15 @@
+PyQt6>=6.6.1
+python-vlc>=3.0.21203
+pedalboard>=0.9.22
+sounddevice>=0.5.5
+numpy>=2.4.3
+mutagen
+obd>=0.7.3
+pyserial>=3.5
+pygame>=2.1
+pydbus>=0.6.0
+cffi>=2.0.0
+# X11 window handling: lets the AirPlay page reparent rpiplay's own video
+# window into the app instead of leaving it floating over the dashboard.
+# Optional at runtime — without it the mirror simply keeps its own window.
+python-xlib>=0.33

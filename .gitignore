@@ -1,0 +1,108 @@
+# --- Copyrighted / personal media (kept locally, never published) ---
+# Engine-sound packs and car artwork: bring your own, see Cars/README.md
+Cars/*
+!Cars/README.md
+
+# Soundboard clips: bring your own, see Sounds/README.md
+Sounds/*
+!Sounds/README.md
+
+# Franchise-themed playlist tag icons; only the neutral ones ship
+GUI/Icons/Tags/*
+!GUI/Icons/Tags/default.png
+!GUI/Icons/Tags/untagged.png
+
+# Music library, session and analysis caches
+Data/music*.json
+!Data/music.example.json
+Data/music (Copy 1).json
+Data/sounddrive_cache/
+
+# --- Per-user runtime state ---
+Data/settings.ini
+Data/settings.ini.*
+Data/*.log
+Data/backup_*.ini
+Data/.cache/
+Data/can_captures/*.txt
+
+# --- Personal / unlicensed assets ---
+grudge2.0.png
+main.ico
+GUI/Icons/Telemetry/ChatGPT Image*.png
+GUI/Icons/Dash/*.orig
+GUI/Icons/Settings/Auto-Driving--Streamline-Ultimate.png
+
+# --- Personal notes (Pi address, car diary) ---
+CLAUDE.local.md
+POST_GUI_CHECKS.md
+Installation/local.env
+
+# --- Tooling / environments ---
+__pycache__/
+*.pyc
+.venv/
+Installation/env/
+Installation/libshim/
+.idea/
+.vscode/
+.claude/
+.codex
+.continue/
+
+# Unused stock backgrounds (no live reference; licence unclear)
+GUI/background_*.png
+
+# Widget-era naming guide, superseded by Styles/Modern/CONTRACT.md (kept locally)
+UI_NAMING.txt
+
+# Icons nothing in the app loads (kept locally; see the unused-code scan 2026-09-30)
+GUI/Icons/Dash/fix.png
+GUI/Icons/Player/finish.png
+GUI/Icons/Player/next.png
+GUI/Icons/Player/next_tag.png
+GUI/Icons/Player/play.png
+GUI/Icons/Player/playlist.png
+GUI/Icons/Player/search.png
+GUI/Icons/Player/start.png
+GUI/Icons/Player/tags.png
+GUI/Icons/Settings/about.png
+GUI/Icons/Settings/alerts.png
+GUI/Icons/Settings/animation.png
+GUI/Icons/Settings/art.png
+GUI/Icons/Settings/audio.png
+GUI/Icons/Settings/connectivity.png
+GUI/Icons/Settings/dash_monitor.png
+GUI/Icons/Settings/diagnose.png
+GUI/Icons/Settings/display.png
+GUI/Icons/Settings/driving_mode.png
+GUI/Icons/Settings/engine_sound.png
+GUI/Icons/Settings/font.png
+GUI/Icons/Settings/services.png
+GUI/Icons/Settings/status.png
+GUI/Icons/Settings/system.png
+GUI/Icons/Settings/trips.png
+GUI/Icons/Telemetry/baro.png
+GUI/Icons/Telemetry/distance.png
+GUI/Icons/Telemetry/elm.png
+GUI/Icons/Telemetry/fuel_pressure.png
+GUI/Icons/Telemetry/fuel_temperature.png
+GUI/Icons/Telemetry/oil_temperature.png
+GUI/Icons/Telemetry/rail_di.png
+GUI/Icons/Telemetry/rail_vac.png
+GUI/Icons/Telemetry/rpm.png
+GUI/Icons/Telemetry/runtime.png
+GUI/Icons/Telemetry/speed.png
+GUI/Icons/Telemetry/throttle_rel.png
+GUI/Icons/Telemetry/warmups.png
+GUI/Icons/chatbot.png
+GUI/Icons/diagnostic.png
+GUI/Icons/missing.png
+GUI/Icons/settings.png
+GUI/Icons/status.png
+
+# Only the removed QWidget CAN debugger read this
+Data/can_protocol_map.json
+
+# Assistant working notes (kept locally; the public version is docs/ARCHITECTURE.md)
+CLAUDE.md

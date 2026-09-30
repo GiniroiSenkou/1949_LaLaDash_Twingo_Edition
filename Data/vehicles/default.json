@@ -1,0 +1,25 @@
+{
+  "name": "Reference vehicle (Renault Twingo III 0.9 TCe 90, 5-speed manual)",
+  "short_name": "Twingo",
+  "default_image": "default_car.png",
+  "redline_rpm": 6500,
+  "tank_litres": 35.0,
+  "fuel_gauge_bars": 6,
+  "gauge_bands": {
+    "RPM": [5000, 5500, 5800, 6500],
+    "Speed": [120, 130, 140, 180]
+  },
+  "gear_ratios_kmh_per_1000rpm": [6.5, 11.5, 17.5, 23.0, 30.0],
+  "engine": {
+    "displacement_m3": 0.898e-3,
+    "volumetric_efficiency": 0.85,
+    "afr_stoich": 14.7,
+    "petrol_kg_per_l": 0.745
+  },
+  "metric_bands": {
+    "Coolant": [85, 100, 10, 20],
+    "Oil Temp": [85, 120, 10, 20],
+    "Intake Air": [45, 55, 65],
+    "Manifold Press": [150, 180, 200]
+  }
+}

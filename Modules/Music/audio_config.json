@@ -1,0 +1,4 @@
+{
+  "usb_alsa_device": "hw:1,0",
+  "alsa_module": "alsa"
+}

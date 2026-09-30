@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "vehicle": "Reference vehicle (Renault Twingo III)",
+  "bus": "ATSP6 (CAN 11-bit 500k) on OBD pins 6/14",
+  "signals": {
+    "brake": {
+      "id": "0x12E",
+      "type": "bool",
+      "byte": 2,
+      "bit": 2,
+      "status": "candidate",
+      "note": "short pulses at 65-72 s of the 2026-09-15 capture, when the brake was tapped"
+    },
+    "hazard": {
+      "id": "0x350",
+      "type": "bool",
+      "byte": 7,
+      "bit": 4,
+      "status": "candidate",
+      "note": "high exactly while the hazards blinked (44.9-61.7 s)"
+    },
+    "high_beam": {
+      "id": "0x5DE",
+      "type": "bool",
+      "byte": 0,
+      "bit": 0,
+      "status": "confirmed",
+      "note": "on 32.5 s, off 42.9 s, matching the stalk"
+    },
+    "low_beam": {
+      "id": "0x5DE",
+      "type": "bool",
+      "byte": 0,
+      "bit": 1,
+      "status": "confirmed",
+      "note": "on 16.6, off 32.5, on 42.9, off 44.0"
+    },
+    "position_lights": {
+      "id": "0x5DE",
+      "type": "bool",
+      "byte": 0,
+      "bit": 2,
+      "status": "candidate",
+      "note": "set from key-on, cleared with everything at 44.0 s - DRL or side lights"
+    },
+    "turn_left": {
+      "id": "0x5DE",
+      "type": "bool",
+      "byte": 0,
+      "bit": 5,
+      "status": "candidate",
+      "note": "one of bits 5/6 - both blink during hazards; which side is which is not known yet"
+    },
+    "turn_right": {
+      "id": "0x5DE",
+      "type": "bool",
+      "byte": 0,
+      "bit": 6,
+      "status": "candidate",
+      "note": "see turn_left"
+    }
+  },
+  "ids": {
+    "0x12E": {"label": "brake / ESP (100 Hz)"},
+    "0x186": {"label": "engine (static with engine off)"},
+    "0x211": {"label": "cluster echo of lights"},
+    "0x350": {"label": "hazard switch"},
+    "0x55D": {"label": "second echo of lights"},
+    "0x5DE": {"label": "BCM exterior lights"}
+  }
+}

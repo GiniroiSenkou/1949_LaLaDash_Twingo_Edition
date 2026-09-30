@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Example Artist - Example Track One.mp3",
+        "tags": [
+            "chill",
+            "study"
+        ]
+    },
+    {
+        "title": "Example Artist - Example Track Two.mp3",
+        "tags": [
+            "driving"
+        ]
+    },
+    {
+        "title": "Another Artist - Example Track Three.mp3",
+        "tags": [
+            "untagged"
+        ]
+    }
+]

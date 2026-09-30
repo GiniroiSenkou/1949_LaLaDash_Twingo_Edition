@@ -1,0 +1,6 @@
+obd
+pedalboard
+sounddevice
+pydub
+pyaudio
+typing-extensions>=4.13.1
